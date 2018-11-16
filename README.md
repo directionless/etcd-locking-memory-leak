@@ -42,9 +42,13 @@ PUT
 
 ```
 
-Memory usage seems to grow without bounds. )Graphs from google stackdriver)
+Memory usage seems to grow without bounds. (Graphs from google stackdriver)
 
+Preoduction graph, since the last cluster re-create
 ![Production Graph](./graphs/production.png)
+
+My test case, running about 30 minutes. The logs show 3 auto
+compaction cycles:
 ![Test Case Graph](./graphs/test-case.png)
 
 
