@@ -1,0 +1,73 @@
+2018-11-16 14:45:52.873719 I | pkg/flags: recognized and used environment variable ETCD_AUTO_COMPACTION_RETENTION=10m
+2018-11-16 14:45:52.874189 I | etcdmain: etcd Version: 3.3.9
+2018-11-16 14:45:52.874249 I | etcdmain: Git SHA: fca8add78
+2018-11-16 14:45:52.874281 I | etcdmain: Go Version: go1.10.3
+2018-11-16 14:45:52.874327 I | etcdmain: Go OS/Arch: linux/amd64
+2018-11-16 14:45:52.874386 I | etcdmain: setting maximum number of CPUs to 1, total number of available CPUs is 1
+2018-11-16 14:45:52.875082 I | embed: listening for peers on http://0.0.0.0:2380
+2018-11-16 14:45:52.875257 I | embed: listening for client requests on 0.0.0.0:2379
+2018-11-16 14:45:52.887450 I | pkg/netutil: resolving test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380 to 10.4.10.22:2380
+2018-11-16 14:45:52.890656 I | pkg/netutil: resolving test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380 to 10.4.10.22:2380
+2018-11-16 14:45:52.892986 I | pkg/netutil: resolving test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2380 to 10.4.1.31:2380
+2018-11-16 14:45:52.895304 I | pkg/netutil: resolving test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2380 to 10.4.1.31:2380
+2018-11-16 14:45:52.896419 I | etcdserver: name = test-etcd-cluster-zc8hwvl7hp
+2018-11-16 14:45:52.896573 I | etcdserver: data dir = /var/etcd/data
+2018-11-16 14:45:52.896637 I | etcdserver: member dir = /var/etcd/data/member
+2018-11-16 14:45:52.896675 I | etcdserver: heartbeat = 100ms
+2018-11-16 14:45:52.896730 I | etcdserver: election = 1000ms
+2018-11-16 14:45:52.896768 I | etcdserver: snapshot count = 100000
+2018-11-16 14:45:52.896853 I | etcdserver: advertise client URLs = http://test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2379
+2018-11-16 14:45:52.926682 I | etcdserver: starting member 8b2f444948ecc60 in cluster 6ee26a19260f81ee
+2018-11-16 14:45:52.926936 I | raft: 8b2f444948ecc60 became follower at term 0
+2018-11-16 14:45:52.927005 I | raft: newRaft 8b2f444948ecc60 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+2018-11-16 14:45:52.927106 I | raft: 8b2f444948ecc60 became follower at term 1
+2018-11-16 14:45:52.937067 W | auth: simple token is not cryptographically signed
+2018-11-16 14:45:52.945491 I | rafthttp: started HTTP pipelining with peer 8e760460d13bc7ca
+2018-11-16 14:45:52.945739 I | rafthttp: starting peer 8e760460d13bc7ca...
+2018-11-16 14:45:52.945863 I | rafthttp: started HTTP pipelining with peer 8e760460d13bc7ca
+2018-11-16 14:45:52.953710 I | rafthttp: started streaming with peer 8e760460d13bc7ca (writer)
+2018-11-16 14:45:52.954733 I | rafthttp: started streaming with peer 8e760460d13bc7ca (writer)
+2018-11-16 14:45:52.955575 I | rafthttp: started peer 8e760460d13bc7ca
+2018-11-16 14:45:52.956536 I | rafthttp: added peer 8e760460d13bc7ca
+2018-11-16 14:45:52.956665 I | etcdserver: starting server... [version: 3.3.9, cluster version: to_be_decided]
+2018-11-16 14:45:52.963645 I | rafthttp: started streaming with peer 8e760460d13bc7ca (stream MsgApp v2 reader)
+2018-11-16 14:45:52.964222 I | rafthttp: started streaming with peer 8e760460d13bc7ca (stream Message reader)
+2018-11-16 14:45:52.966244 I | rafthttp: peer 8e760460d13bc7ca became active
+2018-11-16 14:45:52.966472 I | rafthttp: established a TCP streaming connection with peer 8e760460d13bc7ca (stream Message writer)
+2018-11-16 14:45:52.969475 I | rafthttp: established a TCP streaming connection with peer 8e760460d13bc7ca (stream MsgApp v2 writer)
+2018-11-16 14:45:52.974474 I | rafthttp: established a TCP streaming connection with peer 8e760460d13bc7ca (stream MsgApp v2 reader)
+2018-11-16 14:45:52.974899 I | rafthttp: established a TCP streaming connection with peer 8e760460d13bc7ca (stream Message reader)
+2018-11-16 14:45:53.342708 I | raft: 8b2f444948ecc60 [term: 1] received a MsgVote message with higher term from 8e760460d13bc7ca [term: 4]
+2018-11-16 14:45:53.342961 I | raft: 8b2f444948ecc60 became follower at term 4
+2018-11-16 14:45:53.343033 I | raft: 8b2f444948ecc60 [logterm: 0, index: 0, vote: 0] cast MsgVote for 8e760460d13bc7ca [logterm: 2, index: 5] at term 4
+2018-11-16 14:45:53.347461 I | raft: raft.node: 8b2f444948ecc60 elected leader 8e760460d13bc7ca at term 4
+2018-11-16 14:45:53.350410 I | etcdserver/membership: added member 8e760460d13bc7ca [http://test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380] to cluster 6ee26a19260f81ee
+2018-11-16 14:45:53.351141 N | etcdserver/membership: set the initial cluster version to 3.3
+2018-11-16 14:45:53.351369 I | etcdserver/api: enabled capabilities for version 3.3
+2018-11-16 14:45:53.351640 I | etcdserver/membership: added member 8b2f444948ecc60 [http://test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2380] to cluster 6ee26a19260f81ee
+2018-11-16 14:45:53.353237 I | etcdserver: published {Name:test-etcd-cluster-zc8hwvl7hp ClientURLs:[http://test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2379]} to cluster 6ee26a19260f81ee
+2018-11-16 14:45:53.353603 I | embed: ready to serve client requests
+2018-11-16 14:45:53.354370 N | embed: serving insecure client requests on [::]:2379, this is strongly discouraged!
+2018-11-16 14:46:05.108993 I | etcdserver/membership: added member 1f99aa42dd58e078 [http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380] to cluster 6ee26a19260f81ee
+2018-11-16 14:46:05.109425 I | rafthttp: starting peer 1f99aa42dd58e078...
+2018-11-16 14:46:05.109591 I | rafthttp: started HTTP pipelining with peer 1f99aa42dd58e078
+2018-11-16 14:46:05.113310 I | rafthttp: started peer 1f99aa42dd58e078
+2018-11-16 14:46:05.114031 I | rafthttp: added peer 1f99aa42dd58e078
+2018-11-16 14:46:05.116405 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (writer)
+2018-11-16 14:46:05.116666 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (writer)
+2018-11-16 14:46:05.121850 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (stream MsgApp v2 reader)
+2018-11-16 14:46:05.122477 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (stream Message reader)
+2018-11-16 14:46:09.878084 I | rafthttp: peer 1f99aa42dd58e078 became active
+2018-11-16 14:46:09.878106 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream Message writer)
+2018-11-16 14:46:09.878386 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream MsgApp v2 writer)
+2018-11-16 14:46:09.884307 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream MsgApp v2 reader)
+2018-11-16 14:46:09.885951 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream Message reader)
+2018-11-16 14:46:10.123212 W | rafthttp: health check for peer 1f99aa42dd58e078 could not connect: dial tcp 10.4.9.11:2380: connect: connection refused
+2018-11-16 14:55:41.487494 I | mvcc: store.index: compact 1
+2018-11-16 14:55:41.490081 I | mvcc: finished scheduled compaction at 1 (took 60.615µs)
+2018-11-16 15:05:41.500598 I | mvcc: store.index: compact 5650
+2018-11-16 15:05:41.517838 I | mvcc: finished scheduled compaction at 5650 (took 7.560423ms)
+2018-11-16 15:15:41.520498 I | mvcc: store.index: compact 20651
+2018-11-16 15:15:41.663099 I | mvcc: finished scheduled compaction at 20651 (took 126.975737ms)
+2018-11-16 15:25:41.547134 I | mvcc: store.index: compact 36199
+2018-11-16 15:25:41.680915 I | mvcc: finished scheduled compaction at 36199 (took 123.113873ms)

@@ -1,0 +1,116 @@
+2018-11-16 14:45:41.420853 I | pkg/flags: recognized and used environment variable ETCD_AUTO_COMPACTION_RETENTION=10m
+2018-11-16 14:45:41.421076 I | etcdmain: etcd Version: 3.3.9
+2018-11-16 14:45:41.421081 I | etcdmain: Git SHA: fca8add78
+2018-11-16 14:45:41.421084 I | etcdmain: Go Version: go1.10.3
+2018-11-16 14:45:41.421088 I | etcdmain: Go OS/Arch: linux/amd64
+2018-11-16 14:45:41.421091 I | etcdmain: setting maximum number of CPUs to 1, total number of available CPUs is 1
+2018-11-16 14:45:41.421202 I | embed: listening for peers on http://0.0.0.0:2380
+2018-11-16 14:45:41.421237 I | embed: listening for client requests on 0.0.0.0:2379
+2018-11-16 14:45:41.430393 I | pkg/netutil: resolving test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380 to 10.4.10.22:2380
+2018-11-16 14:45:41.434167 I | pkg/netutil: resolving test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380 to 10.4.10.22:2380
+2018-11-16 14:45:41.434234 I | etcdserver: name = test-etcd-cluster-kp8grrf9ms
+2018-11-16 14:45:41.434238 I | etcdserver: data dir = /var/etcd/data
+2018-11-16 14:45:41.434244 I | etcdserver: member dir = /var/etcd/data/member
+2018-11-16 14:45:41.434248 I | etcdserver: heartbeat = 100ms
+2018-11-16 14:45:41.434251 I | etcdserver: election = 1000ms
+2018-11-16 14:45:41.434258 I | etcdserver: snapshot count = 100000
+2018-11-16 14:45:41.434268 I | etcdserver: advertise client URLs = http://test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2379
+2018-11-16 14:45:41.434273 I | etcdserver: initial advertise peer URLs = http://test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380
+2018-11-16 14:45:41.434281 I | etcdserver: initial cluster = test-etcd-cluster-kp8grrf9ms=http://test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380
+2018-11-16 14:45:41.439435 I | etcdserver: starting member 8e760460d13bc7ca in cluster 6ee26a19260f81ee
+2018-11-16 14:45:41.439466 I | raft: 8e760460d13bc7ca became follower at term 0
+2018-11-16 14:45:41.439479 I | raft: newRaft 8e760460d13bc7ca [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+2018-11-16 14:45:41.439495 I | raft: 8e760460d13bc7ca became follower at term 1
+2018-11-16 14:45:41.465826 W | auth: simple token is not cryptographically signed
+2018-11-16 14:45:41.473141 I | etcdserver: starting server... [version: 3.3.9, cluster version: to_be_decided]
+2018-11-16 14:45:41.476108 I | etcdserver: 8e760460d13bc7ca as single-node; fast-forwarding 9 ticks (election ticks 10)
+2018-11-16 14:45:41.476893 I | etcdserver/membership: added member 8e760460d13bc7ca [http://test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2380] to cluster 6ee26a19260f81ee
+2018-11-16 14:45:41.839819 I | raft: 8e760460d13bc7ca is starting a new election at term 1
+2018-11-16 14:45:41.840063 I | raft: 8e760460d13bc7ca became candidate at term 2
+2018-11-16 14:45:41.840199 I | raft: 8e760460d13bc7ca received MsgVoteResp from 8e760460d13bc7ca at term 2
+2018-11-16 14:45:41.840288 I | raft: 8e760460d13bc7ca became leader at term 2
+2018-11-16 14:45:41.840333 I | raft: raft.node: 8e760460d13bc7ca elected leader 8e760460d13bc7ca at term 2
+2018-11-16 14:45:41.840900 I | etcdserver: setting up the initial cluster version to 3.3
+2018-11-16 14:45:41.842406 N | etcdserver/membership: set the initial cluster version to 3.3
+2018-11-16 14:45:41.842709 I | etcdserver/api: enabled capabilities for version 3.3
+2018-11-16 14:45:41.842863 I | etcdserver: published {Name:test-etcd-cluster-kp8grrf9ms ClientURLs:[http://test-etcd-cluster-kp8grrf9ms.test-etcd-cluster.default.svc:2379]} to cluster 6ee26a19260f81ee
+2018-11-16 14:45:41.843041 I | embed: ready to serve client requests
+2018-11-16 14:45:41.843740 N | embed: serving insecure client requests on [::]:2379, this is strongly discouraged!
+2018-11-16 14:45:49.030515 I | etcdserver/membership: added member 8b2f444948ecc60 [http://test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2380] to cluster 6ee26a19260f81ee
+2018-11-16 14:45:49.030820 I | rafthttp: starting peer 8b2f444948ecc60...
+2018-11-16 14:45:49.030905 I | rafthttp: started HTTP pipelining with peer 8b2f444948ecc60
+2018-11-16 14:45:49.036731 I | rafthttp: started peer 8b2f444948ecc60
+2018-11-16 14:45:49.037036 I | rafthttp: added peer 8b2f444948ecc60
+2018-11-16 14:45:49.037806 I | rafthttp: started streaming with peer 8b2f444948ecc60 (writer)
+2018-11-16 14:45:49.038059 I | rafthttp: started streaming with peer 8b2f444948ecc60 (writer)
+2018-11-16 14:45:49.038349 I | rafthttp: started streaming with peer 8b2f444948ecc60 (stream MsgApp v2 reader)
+2018-11-16 14:45:49.039087 I | rafthttp: started streaming with peer 8b2f444948ecc60 (stream Message reader)
+2018-11-16 14:45:49.847814 W | etcdserver: failed to reach the peerURL(http://test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2380) of member 8b2f444948ecc60 (Get http://test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2380/version: dial tcp: lookup test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc on 10.7.240.10:53: no such host)
+2018-11-16 14:45:49.848133 W | etcdserver: cannot get the version of member 8b2f444948ecc60 (Get http://test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc:2380/version: dial tcp: lookup test-etcd-cluster-zc8hwvl7hp.test-etcd-cluster.default.svc on 10.7.240.10:53: no such host)
+2018-11-16 14:45:50.839850 W | raft: 8e760460d13bc7ca stepped down to follower since quorum is not active
+2018-11-16 14:45:50.840088 I | raft: 8e760460d13bc7ca became follower at term 2
+2018-11-16 14:45:50.840222 I | raft: raft.node: 8e760460d13bc7ca lost leader 8e760460d13bc7ca at term 2
+2018-11-16 14:45:51.939842 I | raft: 8e760460d13bc7ca is starting a new election at term 2
+2018-11-16 14:45:51.940135 I | raft: 8e760460d13bc7ca became candidate at term 3
+2018-11-16 14:45:51.940248 I | raft: 8e760460d13bc7ca received MsgVoteResp from 8e760460d13bc7ca at term 3
+2018-11-16 14:45:51.940330 I | raft: 8e760460d13bc7ca [logterm: 2, index: 5] sent MsgVote request to 8b2f444948ecc60 at term 3
+2018-11-16 14:45:52.966514 I | rafthttp: peer 8b2f444948ecc60 became active
+2018-11-16 14:45:52.966857 I | rafthttp: established a TCP streaming connection with peer 8b2f444948ecc60 (stream Message reader)
+2018-11-16 14:45:52.967095 I | rafthttp: established a TCP streaming connection with peer 8b2f444948ecc60 (stream MsgApp v2 reader)
+2018-11-16 14:45:52.973953 I | rafthttp: established a TCP streaming connection with peer 8b2f444948ecc60 (stream Message writer)
+2018-11-16 14:45:52.974959 I | rafthttp: established a TCP streaming connection with peer 8b2f444948ecc60 (stream MsgApp v2 writer)
+2018-11-16 14:45:53.339849 I | raft: 8e760460d13bc7ca is starting a new election at term 3
+2018-11-16 14:45:53.340071 I | raft: 8e760460d13bc7ca became candidate at term 4
+2018-11-16 14:45:53.340159 I | raft: 8e760460d13bc7ca received MsgVoteResp from 8e760460d13bc7ca at term 4
+2018-11-16 14:45:53.340240 I | raft: 8e760460d13bc7ca [logterm: 2, index: 5] sent MsgVote request to 8b2f444948ecc60 at term 4
+2018-11-16 14:45:53.345403 I | raft: 8e760460d13bc7ca received MsgVoteResp from 8b2f444948ecc60 at term 4
+2018-11-16 14:45:53.345716 I | raft: 8e760460d13bc7ca [quorum:2] has received 2 MsgVoteResp votes and 0 vote rejections
+2018-11-16 14:45:53.345825 I | raft: 8e760460d13bc7ca became leader at term 4
+2018-11-16 14:45:53.345893 I | raft: raft.node: 8e760460d13bc7ca elected leader 8e760460d13bc7ca at term 4
+2018-11-16 14:45:57.075057 W | etcdserver: not healthy for reconfigure, rejecting member add {ID:884c8278352aa850 RaftAttributes:{PeerURLs:[http://test-etcd-cluster-pmcrh8wbtp.test-etcd-cluster.default.svc:2380]} Attributes:{Name: ClientURLs:[]}}
+2018-11-16 14:45:57.410995 W | etcdserver: read-only range request "key:\"foo\" " with result "error:context canceled" took too long (5.004122944s) to execute
+WARNING: 2018/11/16 14:45:57 grpc: Server.processUnaryRPC failed to write status: connection error: desc = "transport is closing"
+2018-11-16 14:45:59.406971 W | etcdserver: timed out waiting for read index response
+2018-11-16 14:45:59.409225 W | etcdserver: read-only range request "key:\"foo\" " with result "range_response_count:0 size:4" took too long (1.948802742s) to execute
+2018-11-16 14:46:05.102916 I | etcdserver/membership: added member 1f99aa42dd58e078 [http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380] to cluster 6ee26a19260f81ee
+2018-11-16 14:46:05.103154 I | rafthttp: starting peer 1f99aa42dd58e078...
+2018-11-16 14:46:05.103304 I | rafthttp: started HTTP pipelining with peer 1f99aa42dd58e078
+2018-11-16 14:46:05.107859 I | rafthttp: started peer 1f99aa42dd58e078
+2018-11-16 14:46:05.108065 I | rafthttp: added peer 1f99aa42dd58e078
+2018-11-16 14:46:05.108959 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (writer)
+2018-11-16 14:46:05.109205 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (writer)
+2018-11-16 14:46:05.109556 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (stream MsgApp v2 reader)
+2018-11-16 14:46:05.110286 I | rafthttp: started streaming with peer 1f99aa42dd58e078 (stream Message reader)
+2018-11-16 14:46:05.369936 W | etcdserver: failed to reach the peerURL(http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380) of member 1f99aa42dd58e078 (Get http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380/version: dial tcp: lookup test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc on 10.7.240.10:53: no such host)
+2018-11-16 14:46:05.370179 W | etcdserver: cannot get the version of member 1f99aa42dd58e078 (Get http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380/version: dial tcp: lookup test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc on 10.7.240.10:53: no such host)
+2018-11-16 14:46:09.373979 W | etcdserver: failed to reach the peerURL(http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380) of member 1f99aa42dd58e078 (Get http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380/version: dial tcp 10.4.9.11:2380: connect: connection refused)
+2018-11-16 14:46:09.374330 W | etcdserver: cannot get the version of member 1f99aa42dd58e078 (Get http://test-etcd-cluster-tb8gsq9hcj.test-etcd-cluster.default.svc:2380/version: dial tcp 10.4.9.11:2380: connect: connection refused)
+2018-11-16 14:46:09.872288 I | rafthttp: peer 1f99aa42dd58e078 became active
+2018-11-16 14:46:09.876374 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream MsgApp v2 writer)
+2018-11-16 14:46:09.877059 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream Message writer)
+2018-11-16 14:46:09.908645 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream Message reader)
+2018-11-16 14:46:09.909142 I | rafthttp: established a TCP streaming connection with peer 1f99aa42dd58e078 (stream MsgApp v2 reader)
+2018-11-16 14:46:10.108825 W | rafthttp: health check for peer 1f99aa42dd58e078 could not connect: dial tcp 10.4.9.11:2380: connect: connection refused
+2018-11-16 14:55:41.482359 N | compactor: Starting auto-compaction at revision 1 (retention: 10m0s)
+2018-11-16 14:55:41.487454 I | mvcc: store.index: compact 1
+2018-11-16 14:55:41.490645 N | compactor: Finished auto-compaction at revision 1
+2018-11-16 14:55:41.491194 I | mvcc: finished scheduled compaction at 1 (took 216.99µs)
+2018-11-16 15:05:41.494824 N | compactor: Starting auto-compaction at revision 5650 (retention: 10m0s)
+2018-11-16 15:05:41.499999 I | mvcc: store.index: compact 5650
+2018-11-16 15:05:41.510712 N | compactor: Finished auto-compaction at revision 5650
+2018-11-16 15:05:41.519438 I | mvcc: finished scheduled compaction at 5650 (took 8.05533ms)
+2018-11-16 15:15:41.514582 N | compactor: Starting auto-compaction at revision 20651 (retention: 10m0s)
+2018-11-16 15:15:41.519652 I | mvcc: store.index: compact 20651
+2018-11-16 15:15:41.539647 N | compactor: Finished auto-compaction at revision 20651
+2018-11-16 15:15:41.664985 I | mvcc: finished scheduled compaction at 20651 (took 124.904475ms)
+WARNING: 2018/11/16 15:17:06 grpc: Server.processUnaryRPC failed to write status connection error: desc = "transport is closing"
+WARNING: 2018/11/16 15:17:06 grpc: Server.processUnaryRPC failed to write status connection error: desc = "transport is closing"
+WARNING: 2018/11/16 15:17:06 grpc: Server.processUnaryRPC failed to write status: connection error: desc = "transport is closing"
+WARNING: 2018/11/16 15:17:06 grpc: Server.processUnaryRPC failed to write status connection error: desc = "transport is closing"
+WARNING: 2018/11/16 15:17:06 grpc: Server.processUnaryRPC failed to write status: connection error: desc = "transport is closing"
+2018-11-16 15:25:41.542062 N | compactor: Starting auto-compaction at revision 36199 (retention: 10m0s)
+2018-11-16 15:25:41.546665 I | mvcc: store.index: compact 36199
+2018-11-16 15:25:41.560922 N | compactor: Finished auto-compaction at revision 36199
+2018-11-16 15:25:41.691272 I | mvcc: finished scheduled compaction at 36199 (took 130.113646ms)
+WARNING: 2018/11/16 15:25:44 grpc: Server.processUnaryRPC failed to write status: connection error: desc = "transport is closing"
+WARNING: 2018/11/16 15:25:44 grpc: Server.processUnaryRPC failed to write status: connection error: desc = "transport is closing"
