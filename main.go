@@ -63,11 +63,15 @@ func main() {
 		endpoints = strings.Split(env, ",")
 	}
 
-	etcd, err := clientv3.New(clientv3.Config{Endpoints: endpoints})
+	etcd, err := clientv3.New(clientv3.Config{
+		Endpoints:   endpoints,
+		DialTimeout: 2 * time.Second,
+	})
 	if err != nil {
 		panic(errors.Wrap(err, "error creating etcd client"))
 	}
 
+	fmt.Printf("Starting lock actors. Talking to %s\n", endpoints)
 	for i := 1; i <= 10; i++ {
 		go locker(etcd)
 	}

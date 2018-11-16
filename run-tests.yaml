@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: "default"
+  name: etcd-test-locker
+  labels:
+    app: etcd-test-locker
+spec:
+  selector:
+    matchLabels:
+      app: etcd-test-locker
+  template:
+    metadata:
+      labels:
+        app: etcd-test-locker
+    spec:
+      containers:
+      - name: etcd-locker
+        image: ${TAG}
+        imagePullPolicy: Always
+        command:
+        - /main
+        env:
+        - name: ENDPOINTS
+          value: test-etcd-cluster-client:2379

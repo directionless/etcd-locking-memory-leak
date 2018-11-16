@@ -1,7 +1,7 @@
 # Etcd Locking Memory Leak
 
 I'm seeing what looks like a memory leak in etcd, when subject to lots
-of lock and unlock cycles.
+of lock and unlock cycles. This is [etcd/10269](https://github.com/etcd-io/etcd/issues/10269)
 
 We keep no data in etcd, it is used solely for locking. At any moment,
 we might have 5ish locks active.
