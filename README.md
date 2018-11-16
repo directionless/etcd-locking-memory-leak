@@ -41,3 +41,10 @@ PUT
 /locks/gjsvgjcxdlbnzdwomebgkjzmdnccdckt/pack:_kmclxbittlwczoendtil:gnptoszgxqpshjukzehd/yawculantbifgfue-qkbkhenwtlzdzdto/47ca671cfc13cc0a
 
 ```
+
+Memory usage seems to grow without bounds. )Graphs from google stackdriver)
+
+![Production Graph](./graphs/production.png)
+![Test Case Graph](./graphs/test-case.png)
+
+
