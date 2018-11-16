@@ -1,0 +1,23 @@
+apiVersion: "etcd.database.coreos.com/v1beta2"
+kind: "EtcdCluster"
+metadata:
+  name: "test-etcd-cluster"
+  namespace: "default"
+  annotations:
+    etcd.database.coreos.com/scope: clusterwide
+spec:
+  size: 3
+  version: "3.3.9"
+  pod:
+    etcdEnv:
+      - name: ETCD_AUTO_COMPACTION_RETENTION
+        value: "10m"
+    affinity:
+      podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+            - key: etcd_cluster
+              operator: In
+              values: ["test-etcd-cluster"]
+          topologyKey: kubernetes.io/hostname
