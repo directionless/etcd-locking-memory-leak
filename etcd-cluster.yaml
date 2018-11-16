@@ -12,6 +12,8 @@ spec:
     etcdEnv:
       - name: ETCD_AUTO_COMPACTION_RETENTION
         value: "10m"
+      - name: ETCD_SNAPSHOT_COUNT
+        value: "100"
     affinity:
       podAntiAffinity:
         requiredDuringSchedulingIgnoredDuringExecution:

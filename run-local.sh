@@ -5,6 +5,7 @@ export ETCD_AUTO_COMPACTION_RETENTION="10m"
 #IMAGE=quay.io/coreos/etcd:v3.3.9
 
 etcd \
+    --snapshot-count=100 \
     --data-dir=/tmp/etcd-memory-test-n1 \
     --name=etcd-cluster-n1 \
     --initial-advertise-peer-urls=http://localhost:2380 \
